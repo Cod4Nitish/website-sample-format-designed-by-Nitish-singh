@@ -18,6 +18,29 @@
 - Responsive layout experimentation using semantic HTML and embedded CSS.
 - An early example of turning a local-business brief into a simple web presence.
 
+## Content architecture
+
+~~~mermaid
+flowchart LR
+    A[Single HTML file] --> B[Navigation and hero]
+    B --> C[About]
+    C --> D[Courses and additional courses]
+    D --> E[Testimonials and news]
+    E --> F[Schedule and enquiry form]
+    F --> G[Contact and blog]
+    H[Embedded CSS] --> A
+~~~
+
+## Source-backed detail
+
+| Area | What is present in the HTML file |
+| --- | --- |
+| Education content | About section, course cards, additional-course cards, student testimonials, news, and blog sections. |
+| Planning content | A schedule area and course-selection form structure. |
+| Conversion points | Navigation anchors, external course links, enquiry inputs, and contact fields. |
+| Styling | Layout and responsive presentation rules are embedded directly in the same HTML document. |
+| Limitation | The forms are static markup; no server-side form handling is included. |
+
 ## Explore locally
 
 Open `roshan coacing center.html` in any browser. It has no build step or external project setup.
